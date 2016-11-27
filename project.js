@@ -1,11 +1,11 @@
 var express = require('express')
 var app = express()
 
-/*
+
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
-*/
+
 app.get("/:text", function(req, res) {
     var dt = new Date(req.params.text)
     if (dt.toDateString() == "Invalid Date"){
